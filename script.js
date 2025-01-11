@@ -16,10 +16,20 @@ const currentDateTxt = document.querySelector('.current-date-txt')
 
 const updateForecastsItemsContainer =document.querySelector('.forecast-items-container')
 
+// MAINTAINENCE
+
+// Show the modal when the page loads
+window.onload = function() {
+    document.getElementById('maintenance-modal').style.display = 'flex';
+ };
+ 
+ document.getElementById('close-button').onclick = function() {
+    document.getElementById('maintenance-modal').style.display = 'none';
+ };
+ // END MAINTAINENCE
 
 
-
-const apikey ='8ed73cac527b1c8d7022cade6cb1dc7b'
+const apikey ='OPEN_WEATHER_API_KEY'
 
 searchBtn.addEventListener('click',()=> {
     if(cityInput.value.trim() != ''){
