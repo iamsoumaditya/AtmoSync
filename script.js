@@ -29,7 +29,7 @@ window.onload = function() {
  // END MAINTAINENCE
 
 
-const apikey ='OPEN_WEATHER_API_KEY'
+const apikey ="1908d74dfb709b1a259ec43825a76f18"
 
 searchBtn.addEventListener('click',()=> {
     if(cityInput.value.trim() != ''){
